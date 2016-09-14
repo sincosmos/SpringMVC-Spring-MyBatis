@@ -31,12 +31,11 @@ public class TestMybatis {
 	
 	@Test
 	public void test1() {
-		
 		List<MUser> list = muserService.getAll();
 		logger.info(JSON.toJSONStringWithDateFormat(list, "yyyy-MM-dd HH:mm:ss"));
 	}
 	
-	//@Test
+	@Test
 	public void test2() {
 	
 		MUser muser = new MUser();
@@ -60,7 +59,7 @@ public class TestMybatis {
 		logger.info(JSON.toJSONStringWithDateFormat("update " +i, "yyyy-MM-dd HH:mm:ss"));
 	}
 	
-	//@Test
+	@Test
 	public void test4() {
 		
 		MUser muser = new MUser();
